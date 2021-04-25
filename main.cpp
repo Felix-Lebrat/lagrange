@@ -169,6 +169,7 @@ int main( int argc, char * argv[] )
         win.clean(Color(255,255,255));
         poly.plot(&win,0.0001);
         win.update();
+        win.save("test.bmp");
         coord=win.startLoop();
         if(coord.x==-1)
             break;
